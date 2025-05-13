@@ -10,7 +10,7 @@ jobs:
   run-tests:
     uses: kiranvattikuti146/VS-TEST-REUSABLE/.github/workflows/VStest-reusable.yml@main
     with:
-      runsOn: "windows-latest"
+      runsOn: "self-hosted"
       dotnet-version: "7.0.x"
       test-assembly: "**/*UnitTests.dll"
       code-coverage-enabled: true
