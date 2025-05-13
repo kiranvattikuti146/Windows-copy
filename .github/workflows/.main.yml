@@ -12,7 +12,7 @@ jobs:
     with:
       runsOn: "windows-latest"
       dotnet-version: "7.0.x"
-      test-assembly: "**/*units.dll"
+      test-assembly: "**/*UnitTests.dll"
       code-coverage-enabled: true
       configuration: "Release"
       platform: "x64"
