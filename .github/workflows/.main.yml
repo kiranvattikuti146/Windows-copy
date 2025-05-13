@@ -12,7 +12,7 @@ jobs:
     with:
       runsOn: "self-hosted"
       dotnet-version: "7.0.x"
-      test-assembly: "**/*UnitTests.dll"
+      test-assembly: "UnitTests.dll"
       code-coverage-enabled: true
       configuration: "Release"
       platform: "x64"
