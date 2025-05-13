@@ -8,7 +8,7 @@ on:
 
 jobs:
   run-tests:
-    uses: kirandevops1993/VS-TEST-REUSABLE/.github/workflows/VStest-reusable.yml@main
+    uses: kiranvattikuti146/VS-TEST-REUSABLE/.github/workflows/VStest-reusable.yml@main
     with:
       runsOn: "windows-latest"
       dotnet-version: "7.0.x"
