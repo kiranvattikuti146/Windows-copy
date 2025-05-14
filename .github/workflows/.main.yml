@@ -12,7 +12,7 @@ jobs:
     with:
       runsOn: "self-hosted"
       dotnet-version: "7.0.x"
-      test-assembly: "*unittest*.dll" # Updated pattern to match the specific path
+      test-assembly: "*unittest*.dll"
       code-coverage-enabled: true
       configuration: "Release"
       platform: "x64"
