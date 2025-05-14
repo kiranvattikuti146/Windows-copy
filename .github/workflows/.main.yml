@@ -12,6 +12,7 @@ jobs:
     with:
       runsOn: "self-hosted"
       dotnet-version: "7.0.x"
+
       
       code-coverage-enabled: true
       configuration: "Release"
