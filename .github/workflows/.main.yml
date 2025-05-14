@@ -12,8 +12,7 @@ jobs:
     with:
       runsOn: "self-hosted"
       dotnet-version: "7.0.x"
-
-      
+      test-assembly: "*tests/UnitTests/bin/Release/net8.0/UnitTests.dll" # Updated pattern to match the specific path
       code-coverage-enabled: true
       configuration: "Release"
       platform: "x64"
