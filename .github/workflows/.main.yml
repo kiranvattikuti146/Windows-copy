@@ -12,7 +12,7 @@ jobs:
     with:
       runsOn: "self-hosted"
       dotnet-version: "7.0.x"
-      test-assembly: ".*Tests.dll"
+      test-assembly: "VSTEST-\tests\UnitTests\bin\Release\net8.0\UnitTests.dll"
       code-coverage-enabled: true
       configuration: "Release"
       platform: "x64"
@@ -24,7 +24,6 @@ jobs:
       tcmTestRun: "1234"
       uiTests: false
       vsTestVersion: "latest"
-      vstestLocation: "vstest.console.exe" 
       diagnosticsEnabled: true
       rerunFailedTests: true
       rerunType: "specific"
