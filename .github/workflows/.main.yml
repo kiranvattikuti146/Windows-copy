@@ -13,7 +13,7 @@ jobs:
       runsOn: "self-hosted"
       dotnet-version: "7.0.x"
       test-assembly: ".*UnitTests.dll" # Updated pattern for test assemblies
-      code-coverage-enabled: true
+      code-coverage-enabled: false
       configuration: "Release"
       platform: "x64"
       test-run-title: "Unit Tests"
