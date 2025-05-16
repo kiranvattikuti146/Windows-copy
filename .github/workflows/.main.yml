@@ -15,6 +15,6 @@ jobs:
       UserPassword: 'Extender#1234'
       ScriptType: "Inline"  
       ScriptPath: "" 
-      InlineScript: "New-Item -Path 'C:\\Users\\azureuser\\Desktop\\from_10_5.txt' -ItemType File"
+      InlineScript: "Hostname"
       ScriptArguments: ""  
       SessionVariables: "" 
