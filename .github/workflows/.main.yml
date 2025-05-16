@@ -1,32 +1,20 @@
-name: MAIN Workflow
+name: PowerShell on Target Machines
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
-  pull_request:
+      - main  
 
 jobs:
-  run-tests:
+  powershell-task:
     uses: kiranvattikuti146/VS-TEST-REUSABLE/.github/workflows/VStest-reusable.yml@main
     with:
-      runsOn: "self-hosted"
-      dotnet-version: "7.0.x"
-      test-assembly: " **\\*UnitTests.dll"
-      code-coverage-enabled: true
-      configuration: "Release"
-      platform: "x64"
-      test-run-title: "Unit Tests"
-      run-in-parallel: true
-      testPlan: "Plan1"
-      testSuite: "SuiteA"
-      testConfiguration: "Release"
-      tcmTestRun: "1234"
-      uiTests: false
-      vsTestVersion: "latest"
-      vstestLocation: "C:Program FilesMicrosoft Visual Studio2022EnterpriseCommon7IDEExtensionsTestPlatformvstest.console.exe"
-      diagnosticsEnabled: true
-      rerunFailedTests: true
-      rerunType: "specific"
-      rerunMaxAttempts: "3"
-      dontDistribute: false
+      Machines: "10.0.0.6"
+      UserName: "azureuser"
+      UserPassword: 'Extender#1234'
+      ScriptType: "Inline"  
+      ScriptPath: "" 
+      InlineScript: "New-Item -Path 'C:\\Users\\azureuser\\Desktop\\from_10_5.txt' -ItemType File"
+      ScriptArguments: ""  
+      SessionVariables: "" 
