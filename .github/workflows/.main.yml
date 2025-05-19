@@ -10,11 +10,11 @@ jobs:
   powershell-task:
     uses: kiranvattikuti146/powershell-Remote-Reusable-/.github/workflows/powershellremote-reusable.yml@main
     with:
-      Machines: " 10.0.0.6"
+      Machines: "10.0.0.6"
       UserName: "azureuser"
       UserPassword: 'Extender#1234'
       ScriptType: "Inline"
       ScriptPath: ""
-      InlineScript: Hostname
+      InlineScript: "Hostname"
       ScriptArguments: ""
       SessionVariables: ""
