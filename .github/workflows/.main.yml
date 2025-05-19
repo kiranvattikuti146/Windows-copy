@@ -15,6 +15,6 @@ jobs:
       UserPassword: 'Extender#1234'
       ScriptType: "Inline"
       ScriptPath: ""
-      InlineScript: "Hostname"
+      InlineScript: "Get-Service"
       ScriptArguments: ""
       SessionVariables: ""
