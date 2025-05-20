@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: kiranvattikuti146/windows-file-copy-reusable/.github/workflows/reusable.yml@main
+    uses: kiranvattikuti146/windows-copy-reusable/.github/workflows/reusable.yml@main
     with:
       SourcePath: 'C:/sourcepath'
       EnvironmentName: 'Production'
