@@ -22,6 +22,5 @@ jobs:
       AuthenticationMechanism: 'Default'
       NewPsSessionOptionArguments: '-SkipCACheck -IdleTimeout 7200000 -OperationTimeout 0 -OutputBufferingMode Block'
       ErrorActionPreference: 'stop'
-      ignoreLASTEXITCODE: false
       WorkingDirectory: ""
       RunPowershellInParallel: true
