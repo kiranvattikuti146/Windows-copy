@@ -9,7 +9,7 @@ jobs:
   call-reusable-workflow:
     uses: kiranvattikuti146/windows-copy-reusable/.github/workflows/reusable.yml@main
     with:
-      SourcePath: 'C: users\public\PublicDocuments\NOTES'
+      SourcePath: 'C: Users\Public\PublicDocuments\NOTES'
       MachineNames: ' 10.0.0.5'
       AdminUserName: 'kiran'
       AdminPassword: 'Extender#123' 
