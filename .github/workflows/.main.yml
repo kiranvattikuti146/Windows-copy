@@ -15,4 +15,4 @@ jobs:
       TargetPath: 'C:\\Target\\Folder'
       CleanTarget: false
       CopyFilesInParallel: true
-      AdditionalArguments: '/some/extra/arguments
+      AdditionalArguments: '/some/extra/arguments'
