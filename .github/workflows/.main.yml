@@ -10,11 +10,19 @@ jobs:
   powershell-task:
     uses: kiranvattikuti146/powershell-Remote-Reusable-/.github/workflows/powershellremote-reusable.yml@main
     with:
-      Machines: "10.0.0.6"
+      Machines: " 10.0.0.6"
       UserName: "azureuser"
       UserPassword: 'Extender#1234'
       ScriptType: "Inline"
       ScriptPath: ""
-      InlineScript: 'Get-Process * 2>&1 > c:\users\azureuser\desktop\combined_output.txt'
+      InlineScript: 'Get-Process * 2>&1 > c: usersazureuserdesktopcombined_output.txt'
       ScriptArguments: ""
       SessionVariables: ""
+      CommunicationProtocol: 'Https'
+      AuthenticationMechanism: 'Default'
+      NewPsSessionOptionArguments: '-SkipCACheck -IdleTimeout 7200000 -OperationTimeout 0 -OutputBufferingMode Block'
+      ErrorActionPreference: 'stop'
+      failOnStderr: false
+      ignoreLASTEXITCODE: false
+      WorkingDirectory: ""
+      RunPowershellInParallel: true
