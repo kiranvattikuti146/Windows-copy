@@ -10,8 +10,8 @@ jobs:
     uses: kiranvattikuti146/windows-copy-reusable/.github/workflows/reusable.yml@main
     with:
       SourcePath: 'C:\\Source\\Files'
-      MachineNames: 'Machine1,Machine2'
-      AdminUserName: 'AdminUser'
+      MachineNames: '10.0.0.5'
+      AdminUserName: 'kiran'
       TargetPath: 'C:\\Target\\Folder'
       CleanTarget: false
       CopyFilesInParallel: true
