@@ -13,6 +13,6 @@ jobs:
       MachineNames: ' 10.0.0.5'
       AdminUserName: 'kiran'
       AdminPassword: 'Extender#123' 
-      TargetPath: 'C: users\azureuser\Desktop\NOTES'
+      TargetPath: 'C: users\kiran\Desktop\NOTES'
       CleanTarget: false
       CopyFilesInParallel: true
