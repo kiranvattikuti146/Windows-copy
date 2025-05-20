@@ -9,8 +9,8 @@ jobs:
   call-reusable-workflow:
     uses: kiranvattikuti146/windows-copy-reusable/.github/workflows/reusable.yml@main
     with:
-      SourcePath: 'C:\\userspublicPublicDocumentsNOTES'
-      MachineNames: '10.0.0.5'
+      SourcePath: 'C:\\users\public\PublicDocuments\NOTES'
+      MachineNames: '10.0.0.6'
       AdminUserName: 'azureuser'
       TargetPath: 'C:\\usersazureuserdesktopNOTES'
       CleanTarget: false
