@@ -1,22 +1,19 @@
-name: Z-Test-Call WindowsMachineFileCopy_731004d4-1d66-4f70-8c05-638018b22210 Copy Files to Dev Machine
+name: Main Workflow for Windows File Copy
 
 on:
   push:
-    branches: [none] #main, feature/dk*
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
   call-reusable-workflow:
     uses: kiranvattikuti146/windows-copy-reusable/.github/workflows/reusable.yml@main
     with:
-      SourcePath: 'C:/sourcepath'
-      EnvironmentName: 'Production'
-      TargetPath: 'C:/targetpath'
-      CleanTargetBeforeCopy: false
-      CopyFilesInParallel: true
-      AdditionalArguments: '-Verbose'
-      ResourceFilteringMethod: 'machineNames'
+      SourcePath: 'C:\\Source\\Files'
       MachineNames: 'Machine1,Machine2'
-    secrets:
-      AdminUserName: ${{ secrets.ADMIN_USERNAME }}
+      AdminUserName: 'AdminUser'
       AdminPassword: ${{ secrets.ADMIN_PASSWORD }}
+      TargetPath: 'C:\\Target\\Folder'
+      CleanTarget: false
+      CopyFilesInParallel: true
+      AdditionalArguments: '/some/extra/arguments'
