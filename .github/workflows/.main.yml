@@ -12,7 +12,7 @@ jobs:
     with:
       Machines: "10.0.0.5"
       UserName: "azureuser"
-      UserPassword: 'Extender#1234'
+      UserPassword: 'Extender#123'
       ScriptType: "Inline"
       ScriptPath: ""
       InlineScript: 'Get-Process * 2>&1 > c:\users\azureuser\desktop\combined_output.txt'
