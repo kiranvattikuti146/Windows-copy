@@ -10,9 +10,9 @@ jobs:
     uses: kiranvattikuti146/windows-copy-reusable/.github/workflows/reusable.yml@main
     with:
       SourcePath: 'C: users\public\PublicDocuments\NOTES'
-      MachineNames: ' 10.0.0.6'
-      AdminUserName: 'azureuser'
-      AdminPassword: 'Extender#1234' 
+      MachineNames: ' 10.0.0.5'
+      AdminUserName: 'kiran'
+      AdminPassword: 'Extender#123' 
       TargetPath: 'C: users\azureuser\Desktop\NOTES'
       CleanTarget: false
       CopyFilesInParallel: true
