@@ -1,20 +1,22 @@
-name: PowerShell on Target Machines
+name: Z-Test-Call WindowsMachineFileCopy_731004d4-1d66-4f70-8c05-638018b22210 Copy Files to Dev Machine
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [none] #main, feature/dk*
+  workflow_dispatch:
 
 jobs:
-  powershell-task:
-    uses: kiranvattikuti146/powershell-Remote-Reusable-/.github/workflows/powershellremote-reusable.yml@main
+  call-reusable-workflow:
+    uses: kiranvattikuti146/windows-file-copy-reusable/.github/workflows/reusable.yml@main
     with:
-      Machines: "10.0.0.5"
-      UserName: "azureuser"
-      UserPassword: 'Extender#123'
-      ScriptType: "Inline"
-      ScriptPath: ""
-      InlineScript: 'Get-Process * 2>&1 > c:\users\azureuser\desktop\combined_output.txt'
-      ScriptArguments: ""
-      SessionVariables: ""
+      SourcePath: 'C:/sourcepath'
+      EnvironmentName: 'Production'
+      TargetPath: 'C:/targetpath'
+      CleanTargetBeforeCopy: false
+      CopyFilesInParallel: true
+      AdditionalArguments: '-Verbose'
+      ResourceFilteringMethod: 'machineNames'
+      MachineNames: 'Machine1,Machine2'
+    secrets:
+      AdminUserName: ${{ secrets.ADMIN_USERNAME }}
+      AdminPassword: ${{ secrets.ADMIN_PASSWORD }}
