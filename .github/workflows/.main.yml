@@ -12,8 +12,7 @@ jobs:
       SourcePath: 'C:\\Source\\Files'
       MachineNames: 'Machine1,Machine2'
       AdminUserName: 'AdminUser'
-      AdminPassword: ${{ secrets.ADMIN_PASSWORD }}
       TargetPath: 'C:\\Target\\Folder'
       CleanTarget: false
       CopyFilesInParallel: true
-      AdditionalArguments: '/some/extra/arguments'
+      AdditionalArguments: '/some/extra/arguments
