@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
 jobs:
   call-reusable-workflow:
     uses: kiranvattikuti146/windows-copy-reusable/.github/workflows/reusable.yml@main
