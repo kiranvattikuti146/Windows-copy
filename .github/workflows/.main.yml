@@ -11,8 +11,8 @@ jobs:
     with:
       SourcePath: 'C: Users\Public\PublicDocuments\NOTES'
       MachineNames: ' 10.0.0.5'
-      AdminUserName: 'kiran'
+      AdminUserName: 'azureuser'
       AdminPassword: 'Extender#123' 
-      TargetPath: 'C: users\kiran\Desktop\NOTES'
+      TargetPath: 'C: users\azureuser\Desktop\NOTES'
       CleanTarget: false
       CopyFilesInParallel: true
