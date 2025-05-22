@@ -9,10 +9,10 @@ jobs:
   call-reusable-workflow:
     uses: kiranvattikuti146/windows-copy-reusable/.github/workflows/reusable.yml@main
     with:
-      SourcePath: 'C: Users\Public\PublicDocuments\NOTES'
-      MachineNames: ' 10.0.0.5'
+      SourcePath: 'C:\Users\azureuser\migration1'
+      MachineNames: '10.0.0.5'
       AdminUserName: 'azureuser'
       AdminPassword: 'Extender#1234' 
-      TargetPath: 'C: users\azureuser\Desktop\NOTES'
+      TargetPath: 'C:\users\azureuser\Desktop'
       CleanTarget: false
       CopyFilesInParallel: true
